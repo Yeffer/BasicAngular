@@ -1,0 +1,35 @@
+<h2 class="page-header"></h2>
+<div class="container">
+  <h2></h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">Datos Persona</div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Genero</th>
+                <th>Sueldo</th>
+                <th>Profesión</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Fecha Registro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>{{ model.Nombre }}</td>
+                <td>{{ model.Apellido }}</td>
+                <td ng-if="model.Sexo == 1">Hombre</td>
+                <td ng-if="model.Sexo == 2">Mujer</td>
+                <td>{{ model.Sueldo }}</td>
+                <td>{{ model.Profesion }}</td>
+                <td>{{ model.FechaNacimiento }}</td>
+                <td>{{ model.FechaRegistro }}</td>
+              </tr>
+            </tbody>
+          </table>
+        <a href="#/" class="btn btn-default btn-block">Volver</a>
+    </div>
+  </div>
+</div>
